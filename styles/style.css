@@ -11,5 +11,127 @@ hmtl,body{
     background-color:hsl(229, 24%, 87%);
     padding: 0px;
     margin: 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: relative;
+    background: url(../images/bg-sidebar-mobile.svg) center center no-repeat;
+    background-size: cover;
+    padding:90px;
+}
+
+span#n1{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+
+    transform: translate(45px, -50px);
+}
+
+span#n2{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+
+    transform: translate(45px, -50px);
+}
+
+span#n3{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+
+    transform: translate(45px, -50px);
+}
+
+span#n4{
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+
+    transform: translate(45px, -50px);
+}
+
+main{
+    position: relative;
+    background-color: white;
+    width: 375px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: -100px;
+    flex: 1;
+}
+
+main > h1{
+    color: hsl(213, 96%, 18%);
+}
+
+main > p{
+    color: hsl(231, 11%, 63%);
+    line-height: 25px;
+}
+
+main > p > label {
+    color: hsl(213, 96%, 18%) ;
+}
+
+main > p > input{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 11%, 63%);
+    width: 340px;
+}
+
+main > p > input.pula{
+margin-bottom: 20px;
+}
+
+main > p > input::placeholder{
+    color: hsl(231, 11%, 63%) ;
+    font-weight: 700;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    transform: translate(0px, 50px);
+}
+
+#next{
+    background-color: hsl(213, 96%, 18%);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    margin-left: 335px;
+}
