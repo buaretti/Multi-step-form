@@ -83,6 +83,12 @@ span#n4{
     transform: translate(45px, -50px);
 }
 
+.circle.active {
+    background-color: hsl(206, 94%, 87%);
+    border-color: hsl(206, 94%, 87%);
+    color: black;
+}
+
 main{
     position: relative;
     background-color: white;
@@ -112,6 +118,11 @@ main > p > input{
     border-radius: 5px;
     border: 1px solid hsl(231, 11%, 63%);
     width: 340px;
+    cursor: pointer;
+}
+
+main > p > input:hover{
+    border-color: hsl(243, 100%, 62%);
 }
 
 main > p > input.pula{
@@ -137,4 +148,9 @@ footer{
     color: white;
     width: 100px;
     margin-left: 335px;
+    cursor: pointer;
+}
+
+#next:hover{
+    background-color: hsla(213, 96%, 18%, 0.901);
 }
