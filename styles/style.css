@@ -1,156 +1,310 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Ubuntu";
-    src: url(../fonts/Ubuntu-Regular.ttf);
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Regular.ttf);
 }
 
-hmtl,body{
-    font-size: 16px;
-    font-family: "Ubuntu";
-    background-color:hsl(229, 24%, 87%);
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
+hmtl,
+body {
+  font-size: 16px;
+  font-family: "Ubuntu";
+  background-color: hsl(229, 24%, 87%);
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-header{
-    position: relative;
-    background: url(../images/bg-sidebar-mobile.svg) center center no-repeat;
-    background-size: cover;
-    padding:90px;
+header {
+  position: relative;
+  background: url(../images/bg-sidebar-mobile.svg) center center no-repeat;
+  background-size: cover;
+  padding: 90px;
 }
 
-span#n1{
-    border: 2px solid white;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
+.circle-1 {
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
 
-    transform: translate(45px, -50px);
+  transform: translate(45px, -50px);
 }
 
-span#n2{
-    border: 2px solid white;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
+.circle-2 {
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
 
-    transform: translate(45px, -50px);
+  transform: translate(45px, -50px);
 }
 
-span#n3{
-    border: 2px solid white;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    display: inline-block;
-    margin-right: 10px;
+.circle-3 {
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
 
-    transform: translate(45px, -50px);
+  transform: translate(45px, -50px);
 }
 
-span#n4{
-    border: 2px solid white;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    display: inline-block;
+.circle-4 {
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
 
-    transform: translate(45px, -50px);
+  transform: translate(45px, -50px);
 }
 
 .circle.active {
-    background-color: hsl(206, 94%, 87%);
-    border-color: hsl(206, 94%, 87%);
-    color: black;
+  background-color: hsl(206, 94%, 87%);
+  color: black;
+  border-color: hsl(206, 94%, 87%);
 }
 
-main{
-    position: relative;
-    background-color: white;
-    width: 375px;
-    margin: auto;
+#arcade{
+    border: 2px solid hsl(229, 24%, 87%);
     border-radius: 10px;
-    padding: 30px;
-    margin-top: -100px;
-    flex: 1;
+    margin-bottom: 15px;
 }
 
-main > h1{
-    color: hsl(213, 96%, 18%);
+#arcade > img{
+    margin-left: 15px;
+    text-align: center;
+    transform: translateY(30px);
 }
 
-main > p{
+#arcade > h2{
+    display: inline-block;
+    transform: translate(10px, 5px);
+    font-size: 16px;
+}
+
+#arcade > p{
+    display: block;
+    font-size: 14px;
+    margin-left: 70px;
+    transform: translateY(-16px);
+}
+
+#advanced{
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#advanced > img{
+    margin-left: 15px;
+    text-align: center;
+    transform: translateY(30px);
+}
+
+#advanced > h2{
+    display: inline-block;
+    transform: translate(10px, 5px);
+    font-size: 16px;
+}
+
+#advanced > p{
+    display: block;
+    font-size: 14px;
+    margin-left: 70px;
+    transform: translateY(-16px);
+}
+
+#pro{
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#pro > img{
+    margin-left: 15px;
+    text-align: center;
+    transform: translateY(30px);
+}
+
+#pro > h2{
+    display: inline-block;
+    transform: translate(10px, 5px);
+    font-size: 16px;
+}
+
+#pro > p{
+    display: block;
+    font-size: 14px;
+    margin-left: 70px;
+    transform: translateY(-16px);
+}
+
+#arcade, #advanced, #pro > p{
     color: hsl(231, 11%, 63%);
-    line-height: 25px;
+}
+
+#arcade, #advanced, #pro:hover{
+    cursor: pointer;
+}
+
+#container{
+    width: 15%;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 25%;
+}
+
+#container1{
+    width: 375px;
+    background-color: hsl(231, 100%, 99%);
+}
+
+.custom-slider {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 50px;
+    background-color: hsl(213, 96%, 18%);
+    outline: none;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+span#m{
+    color: hsl(213, 96%, 18%);
+    display: inline-block;
+    transform: translate(70px, 25px);
+}
+
+span#y{
+    color: hsl(213, 96%, 18%);  
+    display: inline-block;
+    transform: translate(240px, -25px);
+}
+
+main {
+  position: relative;
+  background-color: white;
+  width: 375px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: -100px;
+  flex: 1;
+}
+
+main > h1, h2 {
+  color: hsl(213, 96%, 18%);
+}
+
+main > p {
+  color: hsl(231, 11%, 63%);
+  line-height: 25px;
 }
 
 main > p > label {
-    color: hsl(213, 96%, 18%) ;
+  color: hsl(213, 96%, 18%);
 }
 
-main > p > input{
+main > p > input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid hsl(231, 11%, 63%);
+  width: 340px;
+  cursor: pointer;
+}
+
+main > p > input:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+
+main > p > input.pula {
+  margin-bottom: 20px;
+}
+
+main > p > input::placeholder {
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#goback{
+    background-color: black;
     padding: 15px;
-    border-radius: 5px;
-    border: 1px solid hsl(231, 11%, 63%);
-    width: 340px;
-    cursor: pointer;
-}
-
-main > p > input:hover{
-    border-color: hsl(243, 100%, 62%);
-}
-
-main > p > input.pula{
-margin-bottom: 20px;
-}
-
-main > p > input::placeholder{
-    color: hsl(231, 11%, 63%) ;
-    font-weight: 700;
-}
-
-footer{
-    background-color: white;
-    text-align: center;
-    transform: translate(0px, 50px);
-}
-
-#next{
-    background-color: hsl(213, 96%, 18%);
-    padding: 15px;
     text-align: center;
     border-radius: 5px;
-    color: white;
     width: 100px;
-    margin-left: 335px;
     cursor: pointer;
+    transform: translate(0px, 60px);
 }
 
-#next:hover{
-    background-color: hsla(213, 96%, 18%, 0.901);
+#goback > a{
+    color: hsl(231, 11%, 63%);
+}
+
+#goback > a:hover{
+    color: hsla(213, 96%, 18%, 0.901);
+}
+
+#next {
+  background-color: hsl(213, 96%, 18%);
+  text-align: center;
+  border-radius: 5px;
+  width: 140px;
+  height: 50px;
+  margin-left: 335px;
+  cursor: pointer;
+}
+
+#next > a{
+    color: white;
+}
+
+#next:hover {
+  background-color: hsla(213, 96%, 18%, 0.901);
 }
