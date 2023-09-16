@@ -17,8 +17,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 header {
   position: relative;
   background: url(../images/bg-sidebar-mobile.svg) center center no-repeat;
@@ -162,12 +160,18 @@ header {
     transform: translateY(-16px);
 }
 
-#arcade, #advanced, #pro > p{
+#arcade, #advanced, #pro{
     color: hsl(231, 11%, 63%);
 }
 
-#arcade, #advanced, #pro:hover{
+.monthsfree{
+  color: hsl(213, 96%, 18%);
+}
+
+
+#arcade:hover, #advanced:hover, #pro:hover{
     cursor: pointer;
+    border-color: hsl(243, 100%, 62%);
 }
 
 #container{
@@ -186,6 +190,7 @@ header {
 
 .custom-slider {
     -webkit-appearance: none;
+    appearance: none;
     height: 10px;
     width: 50px;
     background-color: hsl(213, 96%, 18%);
@@ -297,7 +302,7 @@ a{
   width: 140px;
   height: 50px;
   display: inline-block;
-  margin-left: 320px;
+  margin-left: 330px;
   cursor: pointer;
   transform: translate(0px, -10px);
   border-radius: 5px;

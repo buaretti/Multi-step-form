@@ -14,41 +14,51 @@
   </head>
   <body>
     <header>
-        <span id="n1" class="circle circle-1">1</span>
-        <span id="n2" class="circle circle-2">2</span>
-        <span id="n3" class="circle circle-3">3</span>
-        <span id="n4" class="circle circle-4">4</span>
+      <span id="n1" class="circle circle-1">1</span>
+      <span id="n2" class="circle circle-2">2</span>
+      <span id="n3" class="circle circle-3">3</span>
+      <span id="n4" class="circle circle-4">4</span>
     </header>
 
     <main>
       <h1>Select your plan</h1>
       <p>You have the option of monthly or yearly billing.</p>
       <div id="arcade" onclick="arcadeClick()">
-            <img src="../images/icon-arcade.svg" alt="Arcade">
-            <h2>Arcade</h2> <br>
-            <p>$9/mo</p>
-    </div>
+        <img src="../images/icon-arcade.svg" alt="Arcade" />
+        <h2>Arcade</h2>
+        <br />
+        <p id="arcademonth">$9/mo</p>
+        <p class="monthsfree">2 months free</p>
+      </div>
 
       <div id="advanced" onclick="advancedClick()">
-            <img src="../images/icon-advanced.svg" alt="Advanced">
-            <h2>Advanced</h2>
-            <p>$12/mo</p>
+        <img src="../images/icon-advanced.svg" alt="Advanced" />
+        <h2>Advanced</h2>
+        <p id="advancedmonth">$12/mo</p>
+        <p class="monthsfree">2 months free</p>
       </div>
 
       <div id="pro" onclick="proClick()">
-            <img src="../images/icon-pro.svg" alt="Pro">
-            <h2>Pro</h2>
-            <p>$15/mo</p>
-      </div>
-      
-      <div id="container1">
-          <span id="m">Monthly</span>
-          <div id="container">
-              <input class="custom-slider" type="range" name="range" id="range" max="1">
-            </div>
-            <span id="y">Yearly</span>
+        <img src="../images/icon-pro.svg" alt="Pro" />
+        <h2>Pro</h2>
+        <p id="promonth">$15/mo</p>
+        <p class="monthsfree">2 months free</p>
       </div>
 
+      <div id="container1">
+        <span id="m">Monthly</span>
+        <div id="container">
+          <input
+            class="custom-slider"
+            type="range"
+            name="range"
+            id="range"
+            max="1"
+            value="0"
+          />
+        </div>
+        <span id="y">Yearly</span>
+      </div>
     </main>
     <footer>
       <span>
