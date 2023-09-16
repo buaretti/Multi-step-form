@@ -17,10 +17,7 @@ body {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
+
 
 header {
   position: relative;
@@ -225,7 +222,7 @@ main {
   margin: auto;
   border-radius: 10px;
   padding: 30px;
-  margin-top: -100px;
+  transform: translateY(-100px);
   flex: 1;
 }
 
@@ -265,8 +262,7 @@ main > p > input::placeholder {
 
 footer {
   background-color: white;
-  text-align: center;
-  margin-top: 50px;
+  height: 100px;
 }
 
 a{
@@ -274,14 +270,12 @@ a{
 }
 
 #goback{
-    background-color: black;
-    padding: 15px;
+    width: 60px;
     text-align: center;
     border-radius: 5px;
-    width: 100px;
     cursor: pointer;
-    transform: translate(0px, 60px);
-}
+    transform: translate(15px, 40px);
+  }
 
 #goback > a{
     color: hsl(231, 11%, 63%);
@@ -292,19 +286,28 @@ a{
 }
 
 #next {
-  background-color: hsl(213, 96%, 18%);
+  cursor: pointer;
+  transform: translate(0px, 0px);
   text-align: center;
-  border-radius: 5px;
+  display: inline-block;
+}
+
+#nextback{
+  background-color: hsl(213, 96%, 18%);
   width: 140px;
   height: 50px;
-  margin-left: 335px;
+  display: inline-block;
+  margin-left: 320px;
   cursor: pointer;
+  transform: translate(0px, -10px);
+  border-radius: 5px;
+  text-align: center;
 }
 
 #next > a{
     color: white;
 }
 
-#next:hover {
+#nextback:hover {
   background-color: hsla(213, 96%, 18%, 0.901);
 }
