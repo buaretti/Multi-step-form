@@ -228,46 +228,55 @@ span#y{
 
 #onservice > h2{
   font-size: 16px;
+  transform: translate(60px);
 }
 
 #onservicemsg{
   color:hsl(231, 11%, 63%) ;
   font-size: 14px;
+  transform: translate(60px);
 }
 
 #onservicem{
   color: hsl(243, 100%, 62%);
   font-size: 14px;
+  transform: translate(300px, -45px);
 }
 
 
 
 #storage > h2{
   font-size: 16px;
+  transform: translate(60px);
 }
 
 #storagemsg{
   color:hsl(231, 11%, 63%) ;
   font-size: 14px;
+  transform: translate(60px);
 }
 
 #storagem{
   color: hsl(243, 100%, 62%);
   font-size: 14px;
+  transform: translate(300px, -45px);
 }
 
 #profile > h2{
   font-size: 16px;
+  transform: translate(60px);
 }
 
 #profilemsg{
   color:hsl(231, 11%, 63%) ;
   font-size: 14px;
+  transform: translate(60px);
 }
 
 #profilem{
   color: hsl(243, 100%, 62%);
   font-size: 14px;
+  transform: translate(300px, -45px);
 }
 
 .custom-checkbox input[type="checkbox"] {
@@ -276,8 +285,8 @@ span#y{
 
 .custom-checkbox .checkmark {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-color: white; 
   border: 1px solid hsl(229, 24%, 87%);
   border-radius: 3px;
@@ -285,7 +294,7 @@ span#y{
   cursor: pointer;
   margin-left: 15px;
   text-align: center;
-  transform: translateY(30px);
+  transform: translateY(50px);
 }
 
 .custom-checkbox input[type="checkbox"]:checked + .checkmark {
