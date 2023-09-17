@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal info</title>
+    <link
+      rel="shortcut icon"
+      href="../images/img-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/mq-style.css" />
+  </head>
+  <body>
+    <header>
+      <span id="n1" class="circle circle-1">1</span>
+      <span id="n2" class="circle circle-2">2</span>
+      <span id="n3" class="circle circle-3">3</span>
+      <span id="n4" class="circle circle-4">4</span>
+    </header>
+
+    <main>
+      <h1>Pick add-ons</h1>
+      <p>Add-ons help enhance your gaming experience.</p>
+      <div id="onservice" onclick="onserviceClick()">
+        <label class="custom-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <h2>Online service</h2>
+        <p id="onservicemsg">Access to multiplayer games</p>
+        <p id="onservicem">+$1/mo</p>
+      </div>
+
+      <div id="storage" onclick="advancedClick()">
+        <label class="custom-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <h2>Larger storage</h2>
+        <p id="storagemsg">Extra 1TB of cloud save</p>
+        <p id="storagem">+$2/mo</p>
+      </div>
+
+      <div id="profile" onclick="proClick()">
+        <label class="custom-checkbox">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <h2>Customizable profile</h2>
+        <p id="profilemsg">Custom theme on your profile</p>
+        <p id="profilem">+$2/mo</p>
+      </div>
+    </main>
+    <footer>
+      <span>
+        <p id="goback"><a href="page2.html">Go Back</a></p>
+      </span>
+      <span id="nextback">
+        <p id="next"><a href="page4.html">Next Step</a></p>
+      </span>
+    </footer>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

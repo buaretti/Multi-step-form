@@ -220,6 +220,100 @@ span#y{
     transform: translate(240px, -25px);
 }
 
+#onservice{
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#onservice > h2{
+  font-size: 16px;
+}
+
+#onservicemsg{
+  color:hsl(231, 11%, 63%) ;
+  font-size: 14px;
+}
+
+#onservicem{
+  color: hsl(243, 100%, 62%);
+  font-size: 14px;
+}
+
+
+
+#storage > h2{
+  font-size: 16px;
+}
+
+#storagemsg{
+  color:hsl(231, 11%, 63%) ;
+  font-size: 14px;
+}
+
+#storagem{
+  color: hsl(243, 100%, 62%);
+  font-size: 14px;
+}
+
+#profile > h2{
+  font-size: 16px;
+}
+
+#profilemsg{
+  color:hsl(231, 11%, 63%) ;
+  font-size: 14px;
+}
+
+#profilem{
+  color: hsl(243, 100%, 62%);
+  font-size: 14px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white; 
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-left: 15px;
+  text-align: center;
+  transform: translateY(30px);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: hsl(243, 100%, 62%);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+  content: "✔"; 
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  color: white; 
+}
+
+
+#storage{
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#profile{
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
 main {
   position: relative;
   background-color: white;
