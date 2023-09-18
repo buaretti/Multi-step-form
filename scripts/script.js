@@ -94,10 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const path = window.location.pathname;
 
-const match = path.match(/page(\d+)\.html/);
+// Mapeie "index.html" para "page1.html"
+const match = path.match(/(page(\d+)\.html|index\.html)/);
 
 if (match) {
-  const currentPage = parseInt(match[1], 10);
+  const currentPage = parseInt(match[2] || 1, 10); // Use 1 se não houver correspondência
 
   const circles = document.querySelectorAll(".circle");
   circles.forEach((circle, index) => {
