@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   var range = document.getElementById("range");
   var monthsfree = document.querySelectorAll(".monthsfree");
@@ -99,7 +98,7 @@ const match = path.match(/page(\d+)\.html/);
 
 if (match) {
   const currentPage = parseInt(match[1], 10);
-  
+
   const circles = document.querySelectorAll(".circle");
   circles.forEach((circle, index) => {
     if (index + 1 === currentPage) {
@@ -108,7 +107,7 @@ if (match) {
       circle.classList.remove("active");
     }
   });
-  
+
   console.log("Página atual: " + currentPage);
 } else {
   console.log("Página não encontrada ou não possui um número.");
@@ -128,52 +127,78 @@ function toggleCheckboxStyles(checkbox, div, borderColor, backgroundColor) {
 }
 
 // Selecionando os elementos do DOM
-const checkbox1 = document.querySelector(".custom-checkbox1 input[type='checkbox']");
+const checkbox1 = document.querySelector(
+  ".custom-checkbox1 input[type='checkbox']"
+);
 const divOnService = document.getElementById("onservice");
 
-const checkbox2 = document.querySelector(".custom-checkbox2 input[type='checkbox']");
+const checkbox2 = document.querySelector(
+  ".custom-checkbox2 input[type='checkbox']"
+);
 const divStorage = document.getElementById("storage");
 
-const checkbox3 = document.querySelector(".custom-checkbox3 input[type='checkbox']");
+const checkbox3 = document.querySelector(
+  ".custom-checkbox3 input[type='checkbox']"
+);
 const divProfile = document.getElementById("profile");
 
 // Adicionando eventos de clique para os checkboxes
 checkbox1.addEventListener("click", function () {
-  toggleCheckboxStyles(this, divOnService, "hsl(243, 100%, 62%)", "hsl(231, 100%, 99%)");
+  toggleCheckboxStyles(
+    this,
+    divOnService,
+    "hsl(243, 100%, 62%)",
+    "hsl(231, 100%, 99%)"
+  );
 });
 
 checkbox2.addEventListener("click", function () {
-  toggleCheckboxStyles(this, divStorage, "hsl(243, 100%, 62%)", "hsl(231, 100%, 99%)");
+  toggleCheckboxStyles(
+    this,
+    divStorage,
+    "hsl(243, 100%, 62%)",
+    "hsl(231, 100%, 99%)"
+  );
 });
 
 checkbox3.addEventListener("click", function () {
-  toggleCheckboxStyles(this, divProfile, "hsl(243, 100%, 62%)", "hsl(231, 100%, 99%)");
+  toggleCheckboxStyles(
+    this,
+    divProfile,
+    "hsl(243, 100%, 62%)",
+    "hsl(231, 100%, 99%)"
+  );
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Função para atualizar os elementos com base no valor do range
-  function updateElementsBasedOnRange(rangeValue) {
-    const onService = document.getElementById("onservice");
-    const storage = document.getElementById("storage");
-    const profile = document.getElementById("profile");
+  var range = document.getElementById("range"); // Seu controle deslizante de range na Page 2
+  var page3Elements = {
+    // Elementos de texto na Page 3
+    onservicem: document.getElementById("onservicem"),
+    storagem: document.getElementById("storagem"),
+    profilem: document.getElementById("profilem"),
+  };
 
-    if (rangeValue == 1) {
-      document.getElementById("onservicem").textContent = "+$10/yr";
-      document.getElementById("storagem").textContent = "+$20/yr";
-      document.getElementById("profilem").textContent = "+$20/yr";
-    } else {
-      // Mantém o texto atual
-      document.getElementById("onservicem").textContent = "+$1/mo";
-      document.getElementById("storagem").textContent = "+$2/mo";
-      document.getElementById("profilem").textContent = "+$2/mo";
+  // Função para atualizar os elementos de texto na Page 3 com base no valor do range
+  function updatePage3Text() {
+    var rangeValue = parseFloat(range.value);
+
+    if (rangeValue === 0) {
+      // Se o range for 0
+      page3Elements.onservicem.textContent = "$1/mo"; // Atualize o texto de #onservicem
+      page3Elements.storagem.textContent = "$2/mo"; // Atualize o texto de #storagem
+      page3Elements.profilem.textContent = "$2/mo"; // Atualize o texto de #profilem
+    } else if (rangeValue === 1) {
+      // Se o range for 1
+      page3Elements.onservicem.textContent = "+$10/yr"; // Atualize o texto de #onservicem
+      page3Elements.storagem.textContent = "+$20/yr"; // Atualize o texto de #storagem
+      page3Elements.profilem.textContent = "+$20/yr"; // Atualize o texto de #profilem
     }
   }
 
-  // Obtém o valor do range do localStorage
-  const rangeValue = localStorage.getItem("rangeValue");
+  // Adicione um ouvinte de evento ao controle deslizante de range
+  range.addEventListener("input", updatePage3Text);
 
-  if (rangeValue !== null) {
-    // Atualiza os elementos com base no valor do range
-    updateElementsBasedOnRange(rangeValue);
-  }
+  // Chame a função inicialmente para definir os valores corretos na inicialização
+  updatePage3Text();
 });
