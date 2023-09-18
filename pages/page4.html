@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal info</title>
+    <title>Finishing up</title>
     <link
       rel="shortcut icon"
       href="../images/img-logo.png"
@@ -14,52 +14,40 @@
   </head>
   <body>
     <header>
-        <span id="n1" class="circle circle-1">1</span>
-        <span id="n2" class="circle circle-2">2</span>
-        <span id="n3" class="circle circle-3">3</span>
-        <span id="n4" class="circle circle-4">4</span>
+      <span id="n1" class="circle circle-1">1</span>
+      <span id="n2" class="circle circle-2">2</span>
+      <span id="n3" class="circle circle-3">3</span>
+      <span id="n4" class="circle circle-4">4</span>
     </header>
 
     <main>
-      <h1>Personal info</h1>
-      <p>Please provide your name, email address, and phone number.</p>
-      <p>
-        <label for="name">Name</label> <br />
-        <input
-          type="text"
-          class="pula"
-          name="name"
-          id="name"
-          autocomplete="name"
-          placeholder="e.g. Stephen King"
-        />
-        <br />
-        <label for="email">Email Address</label> <br />
-        <input
-          type="text"
-          class="pula"
-          name="email"
-          id="email"
-          autocomplete="email"
-          placeholder="e.g. stephenking@lorem.com"
-        />
-        <br />
-        <label for="phone">Phone Number</label> <br />
-        <input
-          type="text"
-          name="phone"
-          id="phone"
-          autocomplete="tel"
-          placeholder="e.g. +1 234 567 890"
-        />
-      </p>
+      <h1>Finishing up</h1>
+      <p>Double-check everything looks OK before confirming.</p>
+      <div id="fundo">
+        <p>
+          <span id="plano">Arcade</span> <span id="periodo">(Monthly)</span> <span id="planovalor">$9/mo</span>
+        </p>
+
+        <a id="change" href="page2.html">
+          <p>Change</p>
+        </a>
+
+        <hr>
+
+        <p><span id="onserviceadd">Online service</span> <span id="onservicevalue">+$1/mo</span></p>
+
+        <p><span id="storageadd">Larger storage</span> <span id="storagevalue">+$2/mo</span></p>
+
+        <p><span id="profileadd">Customizable profile</span><span id="profilevalue">+$2/mo</span></p>
+      </div>
+      <p><span id="porperiodo">Total (per month)</span> <span id="totalvalue">+$12/mo</span></p>
     </main>
     <footer>
       <span>
         <p id="goback"><a href="page3.html">Go Back</a></p>
       </span>
-      <span id="nextback">
-        <p id="next"><a href="#">Confirm</a></p>
+      <span id="confirmback">
+        <p id="confirm"><a href="#">Confirm</a></p>
       </span>
     </footer>
     <script src="../scripts/script.js"></script>

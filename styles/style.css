@@ -389,6 +389,76 @@ span#y{
   margin-bottom: 30px;
 }
 
+#fundo{
+  background-color: hsl(231, 100%, 99%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#plano{
+  color: hsl(213, 96%, 18%);
+}
+
+#periodo{
+  color: hsl(213, 96%, 18%);
+}
+
+#planovalor{
+  color: hsl(213, 96%, 18%);
+  font-weight: bolder;
+  display: inline-block;
+  transform: translate(160px, 15px);
+  font-size: 14px;
+}
+
+#change{
+  color: hsl(231, 11%, 63%) ;
+  text-decoration: underline;
+  display: inline-block;
+  transform: translate(0px, -30px);
+}
+
+#onserviceadd, #storageadd, #profileadd{
+  color:hsl(231, 11%, 63%);
+}
+
+#onservicevalue, #storagevalue, #profilevalue{
+  color: hsl(213, 96%, 18%);
+}
+
+#onservicevalue{
+  display: inline-block;
+  transform: translate(175px, 0px);
+  font-size: 14px;
+}
+
+#profilevalue{
+  display: inline-block;
+  transform: translate(132px, 0px);
+  font-size: 14px;
+}
+
+#storagevalue{
+  display: inline-block;
+  transform: translate(172px, 0px);
+  font-size: 14px;
+}
+
+#totalvalue{
+  color: hsl(243, 100%, 62%);
+  font-weight: bolder;
+  display: inline-block;
+  transform: translate(135px, 0px);
+}
+
+#porperiodo{
+  margin-left: 20px;
+}
+
+hr {
+  border: 1px solid hsl(229, 24%, 87%); 
+}
+
 main {
   position: relative;
   background-color: white;
@@ -484,4 +554,38 @@ a{
 
 #nextback:hover {
   background-color: hsla(213, 96%, 18%, 0.901);
+}
+
+#confirm {
+  cursor: pointer;
+  transform: translate(0px, 0px);
+  text-align: center;
+  display: inline-block;
+}
+
+#confirmback{
+  background-color: hsl(243, 100%, 62%);
+  width: 140px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 330px;
+  cursor: pointer;
+  transform: translate(0px, -10px);
+  border-radius: 5px;
+  text-align: center;
+}
+
+#confirm > a{
+  color: white;
+}
+
+#confirmback:hover {
+background-color: hsla(243, 100%, 62%, 0.804);
+}
+
+#confirm {
+cursor: pointer;
+transform: translate(0px, 0px);
+text-align: center;
+display: inline-block;
 }
