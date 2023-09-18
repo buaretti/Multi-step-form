@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   var range = document.getElementById("range");
   var monthsfree = document.querySelectorAll(".monthsfree");
@@ -112,3 +113,67 @@ if (match) {
 } else {
   console.log("Página não encontrada ou não possui um número.");
 }
+
+// Função para marcar/desmarcar o checkbox e aplicar os estilos correspondentes
+function toggleCheckboxStyles(checkbox, div, borderColor, backgroundColor) {
+  const isChecked = checkbox.checked;
+
+  if (isChecked) {
+    div.style.borderColor = borderColor;
+    div.style.backgroundColor = backgroundColor;
+  } else {
+    div.style.borderColor = "hsl(229, 24%, 87%)"; // Cor da borda padrão
+    div.style.backgroundColor = "white"; // Cor de fundo padrão
+  }
+}
+
+// Selecionando os elementos do DOM
+const checkbox1 = document.querySelector(".custom-checkbox1 input[type='checkbox']");
+const divOnService = document.getElementById("onservice");
+
+const checkbox2 = document.querySelector(".custom-checkbox2 input[type='checkbox']");
+const divStorage = document.getElementById("storage");
+
+const checkbox3 = document.querySelector(".custom-checkbox3 input[type='checkbox']");
+const divProfile = document.getElementById("profile");
+
+// Adicionando eventos de clique para os checkboxes
+checkbox1.addEventListener("click", function () {
+  toggleCheckboxStyles(this, divOnService, "hsl(243, 100%, 62%)", "hsl(231, 100%, 99%)");
+});
+
+checkbox2.addEventListener("click", function () {
+  toggleCheckboxStyles(this, divStorage, "hsl(243, 100%, 62%)", "hsl(231, 100%, 99%)");
+});
+
+checkbox3.addEventListener("click", function () {
+  toggleCheckboxStyles(this, divProfile, "hsl(243, 100%, 62%)", "hsl(231, 100%, 99%)");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Função para atualizar os elementos com base no valor do range
+  function updateElementsBasedOnRange(rangeValue) {
+    const onService = document.getElementById("onservice");
+    const storage = document.getElementById("storage");
+    const profile = document.getElementById("profile");
+
+    if (rangeValue == 1) {
+      document.getElementById("onservicem").textContent = "+$10/yr";
+      document.getElementById("storagem").textContent = "+$20/yr";
+      document.getElementById("profilem").textContent = "+$20/yr";
+    } else {
+      // Mantém o texto atual
+      document.getElementById("onservicem").textContent = "+$1/mo";
+      document.getElementById("storagem").textContent = "+$2/mo";
+      document.getElementById("profilem").textContent = "+$2/mo";
+    }
+  }
+
+  // Obtém o valor do range do localStorage
+  const rangeValue = localStorage.getItem("rangeValue");
+
+  if (rangeValue !== null) {
+    // Atualiza os elementos com base no valor do range
+    updateElementsBasedOnRange(rangeValue);
+  }
+});

@@ -228,62 +228,71 @@ span#y{
 
 #onservice > h2{
   font-size: 16px;
-  transform: translate(60px);
+  transform: translate(70px);
+  width: 150px;
 }
 
 #onservicemsg{
   color:hsl(231, 11%, 63%) ;
   font-size: 14px;
-  transform: translate(60px);
+  transform: translate(70px);
+  width: 180px;
 }
 
 #onservicem{
   color: hsl(243, 100%, 62%);
   font-size: 14px;
   transform: translate(300px, -45px);
+  width: 100px;
 }
 
 
 
 #storage > h2{
   font-size: 16px;
-  transform: translate(60px);
+  transform: translate(70px);
+  width: 150px;
 }
 
 #storagemsg{
   color:hsl(231, 11%, 63%) ;
   font-size: 14px;
-  transform: translate(60px);
+  transform: translate(70px);
+  width: 150px;
 }
 
 #storagem{
   color: hsl(243, 100%, 62%);
   font-size: 14px;
   transform: translate(300px, -45px);
+  width: 100px;
 }
 
 #profile > h2{
   font-size: 16px;
-  transform: translate(60px);
+  transform: translate(70px);
+  width: 160px;
 }
 
 #profilemsg{
   color:hsl(231, 11%, 63%) ;
   font-size: 14px;
-  transform: translate(60px);
+  transform: translate(70px);
+  width: 200px;
 }
 
 #profilem{
   color: hsl(243, 100%, 62%);
   font-size: 14px;
   transform: translate(300px, -45px);
+  width: 100px;
 }
 
-.custom-checkbox input[type="checkbox"] {
+.custom-checkbox1 input[type="checkbox"] {
   display: none;
 }
 
-.custom-checkbox .checkmark {
+.custom-checkbox1 .checkmark {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -292,17 +301,74 @@ span#y{
   border-radius: 3px;
   margin-right: 10px;
   cursor: pointer;
-  margin-left: 15px;
   text-align: center;
-  transform: translateY(50px);
+  transform: translate(22px, 55px);
+}
+.custom-checkbox2 input[type="checkbox"] {
+  display: none;
 }
 
-.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+.custom-checkbox2 .checkmark {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: white; 
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+  transform: translate(22px, 55px);
+}
+.custom-checkbox3 input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox3 .checkmark {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: white; 
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+  transform: translate(22px, 55px);
+}
+
+.custom-checkbox1 input[type="checkbox"]:checked + .checkmark {
   background-color: hsl(243, 100%, 62%);
   border: 1px solid hsl(243, 100%, 62%);
 }
 
-.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+.custom-checkbox1 input[type="checkbox"]:checked + .checkmark::before {
+  content: "✔"; 
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  color: white; 
+}
+
+.custom-checkbox2 input[type="checkbox"]:checked + .checkmark {
+  background-color: hsl(243, 100%, 62%);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.custom-checkbox2 input[type="checkbox"]:checked + .checkmark::before {
+  content: "✔"; 
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  color: white; 
+}
+
+.custom-checkbox3 input[type="checkbox"]:checked + .checkmark {
+  background-color: hsl(243, 100%, 62%);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.custom-checkbox3 input[type="checkbox"]:checked + .checkmark::before {
   content: "✔"; 
   display: block;
   text-align: center;
