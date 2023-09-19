@@ -114,6 +114,7 @@
   }
 
   .circle-1 {
+    margin-left: 5px;
     margin-right: 80px;
     height: 30px;
     width: 30px;
@@ -175,6 +176,125 @@
 }
 
 @media only screen and (min-width: 992px) {
+
+  header {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 325px;
+    border-radius: 10px;
+    transform: translate(55px, 125px);
+  }
+
+  main {
+    width: 850px;
+    padding: 30px;
+    position: absolute;
+    z-index: 1;
+    flex-grow: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  footer {
+    width: 910px;
+    position: relative;
+    top: 545px;
+    z-index: 0;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  main > p > input {
+    width: 410px;
+    transform: translate(330px);
+  }
+
+  main > p > label {
+    transform: translate(330px);
+    display: inline-block;
+  }
+
+  h1 {
+    transform: translate(-2px);
+  }
+
+  .geralp {
+    transform: translate(300px);
+    width:500px;
+  }
+
+  #goback {
+    transform: translate(360px, 40px);
+  }
+
+  #nextback {
+    transform: translate(333.5px, -10px);
+  }
+
+  #confirmback {
+    transform: translate(333.5px, -10px);
+  }
+
+  .circle-1 {
+    margin-left: 0px;
+    transform: translate(-60px, -50px);
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+  .circle-2 {
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+  .circle-3 {
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+  .circle-4 {
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+
+  #container1 {
+    transform: translate(140px);
+  }
+
+  #planovalor {
+    transform: translate(400px, 15px);
+  }
+
+  #onservicevalue {
+    transform: translate(415px, 0px);
+  }
+
+  #profilevalue {
+    transform: translate(372px, 0px);
+  }
+
+  #storagevalue {
+    transform: translate(412px, 0px);
+  }
+
+  #totalvalue {
+    transform: translate(375px, 0px);
+  }
+
+  #onservicem {
+    transform: translate(550px, -45px);
+  }
+
+  #storagem {
+    transform: translate(550px, -45px);
+  }
+
+  #profilem {
+    transform: translate(550px, -45px);
+  }
 }
 
 @media only screen and (min-width: 1200px) {

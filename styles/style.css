@@ -34,6 +34,7 @@ header {
   text-align: center;
   display: inline-block;
   margin-right: 10px;
+  margin-left: 5px;
 
   transform: translate(45px, -50px);
 }
@@ -85,203 +86,204 @@ header {
   border-color: hsl(206, 94%, 87%);
 }
 
-#arcade{
-    border: 2px solid hsl(229, 24%, 87%);
-    border-radius: 10px;
-    margin-bottom: 15px;
+#arcade {
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-#arcade > img{
-    margin-left: 15px;
-    text-align: center;
-    transform: translateY(30px);
+#arcade > img {
+  margin-left: 15px;
+  text-align: center;
+  transform: translateY(30px);
 }
 
-#arcade > h2{
-    display: inline-block;
-    transform: translate(10px, 5px);
-    font-size: 16px;
+#arcade > h2 {
+  display: inline-block;
+  transform: translate(10px, 5px);
+  font-size: 16px;
 }
 
-#arcade > p{
-    display: block;
-    font-size: 14px;
-    margin-left: 70px;
-    transform: translateY(-16px);
+#arcade > p {
+  display: block;
+  font-size: 14px;
+  margin-left: 70px;
+  transform: translateY(-16px);
 }
 
-#advanced{
-    border: 2px solid hsl(229, 24%, 87%);
-    border-radius: 10px;
-    margin-bottom: 15px;
+#advanced {
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-#advanced > img{
-    margin-left: 15px;
-    text-align: center;
-    transform: translateY(30px);
+#advanced > img {
+  margin-left: 15px;
+  text-align: center;
+  transform: translateY(30px);
 }
 
-#advanced > h2{
-    display: inline-block;
-    transform: translate(10px, 5px);
-    font-size: 16px;
+#advanced > h2 {
+  display: inline-block;
+  transform: translate(10px, 5px);
+  font-size: 16px;
 }
 
-#advanced > p{
-    display: block;
-    font-size: 14px;
-    margin-left: 70px;
-    transform: translateY(-16px);
+#advanced > p {
+  display: block;
+  font-size: 14px;
+  margin-left: 70px;
+  transform: translateY(-16px);
 }
 
-#pro{
-    border: 2px solid hsl(229, 24%, 87%);
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-#pro > img{
-    margin-left: 15px;
-    text-align: center;
-    transform: translateY(30px);
-}
-
-#pro > h2{
-    display: inline-block;
-    transform: translate(10px, 5px);
-    font-size: 16px;
-}
-
-#pro > p{
-    display: block;
-    font-size: 14px;
-    margin-left: 70px;
-    transform: translateY(-16px);
-}
-
-#arcade, #advanced, #pro{
-    color: hsl(231, 11%, 63%);
-}
-
-.monthsfree{
-  color: hsl(213, 96%, 18%);
-}
-
-
-#arcade:hover, #advanced:hover, #pro:hover{
-    cursor: pointer;
-    border-color: hsl(243, 100%, 62%);
-}
-
-#container{
-    width: 15%;
-    height: 30px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: hsl(213, 96%, 18%);
-    border-radius: 25%;
-}
-
-#container1{
-    width: 375px;
-    background-color: hsl(231, 100%, 99%);
-}
-
-.custom-slider {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 10px;
-    width: 50px;
-    background-color: hsl(213, 96%, 18%);
-    outline: none;
-    cursor: pointer;
-    transform: translateY(5px);
-}
-
-.custom-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: white;
-    cursor: pointer;
-}
-
-span#m{
-    color: hsl(213, 96%, 18%);
-    display: inline-block;
-    transform: translate(70px, 25px);
-}
-
-span#y{
-    color: hsl(213, 96%, 18%);  
-    display: inline-block;
-    transform: translate(240px, -25px);
-}
-
-#onservice{
+#pro {
   border: 2px solid hsl(229, 24%, 87%);
   border-radius: 10px;
   margin-bottom: 30px;
 }
 
-#onservice > h2{
+#pro > img {
+  margin-left: 15px;
+  text-align: center;
+  transform: translateY(30px);
+}
+
+#pro > h2 {
+  display: inline-block;
+  transform: translate(10px, 5px);
+  font-size: 16px;
+}
+
+#pro > p {
+  display: block;
+  font-size: 14px;
+  margin-left: 70px;
+  transform: translateY(-16px);
+}
+
+#arcade,
+#advanced,
+#pro {
+  color: hsl(231, 11%, 63%);
+}
+
+.monthsfree {
+  color: hsl(213, 96%, 18%);
+}
+
+#arcade:hover,
+#advanced:hover,
+#pro:hover {
+  cursor: pointer;
+  border-color: hsl(243, 100%, 62%);
+}
+
+#container {
+  width: 15%;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 25%;
+}
+
+#container1 {
+  width: 375px;
+  background-color: hsl(231, 100%, 99%);
+}
+
+.custom-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 50px;
+  background-color: hsl(213, 96%, 18%);
+  outline: none;
+  cursor: pointer;
+  transform: translateY(5px);
+}
+
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+span#m {
+  color: hsl(213, 96%, 18%);
+  display: inline-block;
+  transform: translate(70px, 25px);
+}
+
+span#y {
+  color: hsl(213, 96%, 18%);
+  display: inline-block;
+  transform: translate(240px, -25px);
+}
+
+#onservice {
+  border: 2px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#onservice > h2 {
   font-size: 16px;
   transform: translate(70px);
   width: 150px;
 }
 
-#onservicemsg{
-  color:hsl(231, 11%, 63%) ;
+#onservicemsg {
+  color: hsl(231, 11%, 63%);
   font-size: 14px;
   transform: translate(70px);
   width: 180px;
 }
 
-#onservicem{
+#onservicem {
   color: hsl(243, 100%, 62%);
   font-size: 14px;
   transform: translate(300px, -45px);
   width: 100px;
 }
 
-
-
-#storage > h2{
+#storage > h2 {
   font-size: 16px;
   transform: translate(70px);
   width: 150px;
 }
 
-#storagemsg{
-  color:hsl(231, 11%, 63%) ;
+#storagemsg {
+  color: hsl(231, 11%, 63%);
   font-size: 14px;
   transform: translate(70px);
   width: 150px;
 }
 
-#storagem{
+#storagem {
   color: hsl(243, 100%, 62%);
   font-size: 14px;
   transform: translate(300px, -45px);
   width: 100px;
 }
 
-#profile > h2{
+#profile > h2 {
   font-size: 16px;
   transform: translate(70px);
   width: 160px;
 }
 
-#profilemsg{
-  color:hsl(231, 11%, 63%) ;
+#profilemsg {
+  color: hsl(231, 11%, 63%);
   font-size: 14px;
   transform: translate(70px);
   width: 200px;
 }
 
-#profilem{
+#profilem {
   color: hsl(243, 100%, 62%);
   font-size: 14px;
   transform: translate(300px, -45px);
@@ -296,7 +298,7 @@ span#y{
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-color: white; 
+  background-color: white;
   border: 1px solid hsl(229, 24%, 87%);
   border-radius: 3px;
   margin-right: 10px;
@@ -312,7 +314,7 @@ span#y{
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-color: white; 
+  background-color: white;
   border: 1px solid hsl(229, 24%, 87%);
   border-radius: 3px;
   margin-right: 10px;
@@ -328,7 +330,7 @@ span#y{
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-color: white; 
+  background-color: white;
   border: 1px solid hsl(229, 24%, 87%);
   border-radius: 3px;
   margin-right: 10px;
@@ -343,11 +345,11 @@ span#y{
 }
 
 .custom-checkbox1 input[type="checkbox"]:checked + .checkmark::before {
-  content: "✔"; 
+  content: "✔";
   display: block;
   text-align: center;
   line-height: 20px;
-  color: white; 
+  color: white;
 }
 
 .custom-checkbox2 input[type="checkbox"]:checked + .checkmark {
@@ -356,11 +358,11 @@ span#y{
 }
 
 .custom-checkbox2 input[type="checkbox"]:checked + .checkmark::before {
-  content: "✔"; 
+  content: "✔";
   display: block;
   text-align: center;
   line-height: 20px;
-  color: white; 
+  color: white;
 }
 
 .custom-checkbox3 input[type="checkbox"]:checked + .checkmark {
@@ -369,41 +371,40 @@ span#y{
 }
 
 .custom-checkbox3 input[type="checkbox"]:checked + .checkmark::before {
-  content: "✔"; 
+  content: "✔";
   display: block;
   text-align: center;
   line-height: 20px;
-  color: white; 
+  color: white;
 }
 
-
-#storage{
+#storage {
   border: 2px solid hsl(229, 24%, 87%);
   border-radius: 10px;
   margin-bottom: 30px;
 }
 
-#profile{
+#profile {
   border: 2px solid hsl(229, 24%, 87%);
   border-radius: 10px;
   margin-bottom: 30px;
 }
 
-#fundo{
+#fundo {
   background-color: hsl(231, 100%, 99%);
   border-radius: 10px;
   padding: 20px;
 }
 
-#plano{
+#plano {
   color: hsl(213, 96%, 18%);
 }
 
-#periodo{
+#periodo {
   color: hsl(213, 96%, 18%);
 }
 
-#planovalor{
+#planovalor {
   color: hsl(213, 96%, 18%);
   font-weight: bolder;
   display: inline-block;
@@ -411,71 +412,75 @@ span#y{
   font-size: 14px;
 }
 
-#change{
-  color: hsl(231, 11%, 63%) ;
+#change {
+  color: hsl(231, 11%, 63%);
   text-decoration: underline;
   display: inline-block;
   transform: translate(0px, -30px);
 }
 
-#change:hover{
+#change:hover {
   color: hsl(243, 100%, 62%);
 }
 
-#onserviceadd, #storageadd, #profileadd{
-  color:hsl(231, 11%, 63%);
+#onserviceadd,
+#storageadd,
+#profileadd {
+  color: hsl(231, 11%, 63%);
 }
 
-#onservicevalue, #storagevalue, #profilevalue{
+#onservicevalue,
+#storagevalue,
+#profilevalue {
   color: hsl(213, 96%, 18%);
 }
 
-#onservicevalue{
+#onservicevalue {
   display: inline-block;
   transform: translate(175px, 0px);
   font-size: 14px;
 }
 
-#profilevalue{
+#profilevalue {
   display: inline-block;
   transform: translate(132px, 0px);
   font-size: 14px;
 }
 
-#storagevalue{
+#storagevalue {
   display: inline-block;
   transform: translate(172px, 0px);
   font-size: 14px;
 }
 
-#totalvalue{
+#totalvalue {
   color: hsl(243, 100%, 62%);
   font-weight: bolder;
   display: inline-block;
   transform: translate(135px, 0px);
 }
 
-#porperiodo{
+#porperiodo {
   margin-left: 20px;
 }
 
 hr {
-  border: 1px solid hsl(229, 24%, 87%); 
+  border: 1px solid hsl(229, 24%, 87%);
   transform: translate(0px, -20px);
 }
 
-#thanksimg{
+#thanksimg {
   text-align: center;
   margin: auto;
   display: block;
   margin-top: 70px;
 }
 
-#thanks{
+#thanks {
   text-align: center;
 }
 
-#pthanks{
+#pthanks {
   text-align: center;
   margin-bottom: 70px;
 }
@@ -491,7 +496,8 @@ main {
   flex: 1;
 }
 
-main > h1, h2 {
+main > h1,
+h2 {
   color: hsl(213, 96%, 18%);
 }
 
@@ -530,24 +536,24 @@ footer {
   height: 100px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-#goback{
-    width: 60px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    transform: translate(15px, 40px);
-  }
-
-#goback > a{
-    color: hsl(231, 11%, 63%);
+#goback {
+  width: 60px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: translate(15px, 40px);
 }
 
-#goback > a:hover{
-    color: hsla(213, 96%, 18%, 0.901);
+#goback > a {
+  color: hsl(231, 11%, 63%);
+}
+
+#goback > a:hover {
+  color: hsla(213, 96%, 18%, 0.901);
 }
 
 #next {
@@ -557,7 +563,7 @@ a{
   display: inline-block;
 }
 
-#nextback{
+#nextback {
   background-color: hsl(213, 96%, 18%);
   width: 140px;
   height: 50px;
@@ -569,8 +575,8 @@ a{
   text-align: center;
 }
 
-#next > a{
-    color: white;
+#next > a {
+  color: white;
 }
 
 #nextback:hover {
@@ -584,7 +590,7 @@ a{
   display: inline-block;
 }
 
-#confirmback{
+#confirmback {
   background-color: hsl(243, 100%, 62%);
   width: 140px;
   height: 50px;
@@ -596,17 +602,17 @@ a{
   text-align: center;
 }
 
-#confirm > a{
+#confirm > a {
   color: white;
 }
 
 #confirmback:hover {
-background-color: hsla(243, 100%, 62%, 0.804);
+  background-color: hsla(243, 100%, 62%, 0.804);
 }
 
 #confirm {
-cursor: pointer;
-transform: translate(0px, 0px);
-text-align: center;
-display: inline-block;
+  cursor: pointer;
+  transform: translate(0px, 0px);
+  text-align: center;
+  display: inline-block;
 }
