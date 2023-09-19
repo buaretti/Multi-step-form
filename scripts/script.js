@@ -100,6 +100,10 @@ const match = path.match(/(page(\d+)\.html|index\.html)/);
 if (match) {
   const currentPage = parseInt(match[2] || 1, 10); // Use 1 se não houver correspondência
 
+  if (currentPage === 5 || path.endsWith("page5.html")) {
+    currentPage = 4;
+  }
+
   const circles = document.querySelectorAll(".circle");
   circles.forEach((circle, index) => {
     if (index + 1 === currentPage) {

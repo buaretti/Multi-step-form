@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="styles/mq-style.css" />
 
     <style>
-      #nextback{
-        transform: translate(0px,25px);
+      #goback > a{
+        color: white;
+      }
+
+      #goback > a:hover{
+        color: white;
       }
     </style>
   </head>
@@ -28,7 +32,7 @@
 
     <main>
       <h1>Personal info</h1>
-      <p>Please provide your name, email address, and phone number.</p>
+      <p class="geralp">Please provide your name, email address, and phone number.</p>
       <p>
         <label for="name">Name</label> <br />
         <input
@@ -61,6 +65,9 @@
       </p>
     </main>
     <footer>
+      <span>
+        <p id="goback"><a href="../index.html">Go Back</a></p>
+      </span>
       <span id="nextback">
         <p id="next"><a href="pages/page2.html">Next Step</a></p>
       </span>
