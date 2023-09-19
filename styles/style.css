@@ -407,7 +407,7 @@ span#y{
   color: hsl(213, 96%, 18%);
   font-weight: bolder;
   display: inline-block;
-  transform: translate(160px, 15px);
+  transform: translate(158px, 15px);
   font-size: 14px;
 }
 
@@ -416,6 +416,10 @@ span#y{
   text-decoration: underline;
   display: inline-block;
   transform: translate(0px, -30px);
+}
+
+#change:hover{
+  color: hsl(243, 100%, 62%);
 }
 
 #onserviceadd, #storageadd, #profileadd{
@@ -457,6 +461,23 @@ span#y{
 
 hr {
   border: 1px solid hsl(229, 24%, 87%); 
+  transform: translate(0px, -20px);
+}
+
+#thanksimg{
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: 70px;
+}
+
+#thanks{
+  text-align: center;
+}
+
+#pthanks{
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 main {
