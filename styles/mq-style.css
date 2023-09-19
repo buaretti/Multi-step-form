@@ -1,108 +1,184 @@
 @charset "UTF-8";
 
 @media only screen and (min-width: 600px) {
-    
-    main{
-        width: 490px;
-        margin: auto;
-        padding: 30px;
-    }
+  main {
+    width: 490px;
+    padding: 30px;
+  }
 
-    h1{
-        text-align: center;
-    }
+  h1 {
+    text-align: center;
+  }
 
-    main > p > input{
-      width: 450px;
-    }
+  main > p > input {
+    width: 450px;
+  }
 
-    .geralp{
-        text-align: center;
-    }
+  .geralp {
+    text-align: center;
+  }
 
-      #nextback{
-        transform: translate(100px, -10px);
-    }
-    
-    #confirmback{
-        transform: translate(100px, -10px);    
-      }
+  #nextback {
+    transform: translate(100px, -10px);
+  }
 
-      .circle-1{
-        margin-right: 35px;
-        height: 30px;
-        width: 30px;
-        font-size: 25px;
-      }
-      .circle-2{
-        margin-right: 35px;
-        height: 30px;
-        width: 30px;
-        font-size: 25px;
-      }
-      .circle-3{
-        margin-right: 35px;
-        height: 30px;
-        width: 30px;
-        font-size: 25px;
-      }
-      .circle-4{
-        height: 30px;
-        width: 30px;
-        font-size: 25px;
-      }
+  #confirmback {
+    transform: translate(100px, -10px);
+  }
 
-      #container1{
-        transform: translate(55px);
-      }
+  .circle-1 {
+    margin-right: 35px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
+  .circle-2 {
+    margin-right: 35px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
+  .circle-3 {
+    margin-right: 35px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
+  .circle-4 {
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
 
-      #planovalor{
-        transform: translate(250px, 15px);
-      }
+  #container1 {
+    transform: translate(55px);
+  }
 
-      #onservicevalue{
-        transform: translate(265px, 0px);
-      }
-      
-      #profilevalue{
-        transform: translate(222px, 0px);
-      }
-      
-      #storagevalue{
-        transform: translate(262px, 0px);
-      }
-      
-      #totalvalue{
-        transform: translate(225px, 0px);
-      }
+  #planovalor {
+    transform: translate(250px, 15px);
+  }
 
-      #onservicem{
-        transform: translate(400px, -45px);
-      }
+  #onservicevalue {
+    transform: translate(265px, 0px);
+  }
 
-      #storagem{
-        transform: translate(400px, -45px);
-      }
+  #profilevalue {
+    transform: translate(222px, 0px);
+  }
 
-      #profilem{
-        transform: translate(400px, -45px);
-      }
+  #storagevalue {
+    transform: translate(262px, 0px);
+  }
 
+  #totalvalue {
+    transform: translate(225px, 0px);
+  }
+
+  #onservicem {
+    transform: translate(400px, -45px);
+  }
+
+  #storagem {
+    transform: translate(400px, -45px);
+  }
+
+  #profilem {
+    transform: translate(400px, -45px);
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  main {
+    width: 650px;
+    padding: 30px;
+  }
 
+  h1 {
+    text-align: center;
+  }
+
+  main > p > input {
+    width: 600px;
+  }
+
+  .geralp {
+    text-align: center;
+  }
+
+  #nextback {
+    transform: translate(270px, -10px);
+  }
+
+  #confirmback {
+    transform: translate(270px, -10px);
+  }
+
+  .circle-1 {
+    margin-right: 80px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
+  .circle-2 {
+    margin-right: 80px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
+  .circle-3 {
+    margin-right: 80px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
+  .circle-4 {
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
+
+  #container1 {
+    transform: translate(140px);
+  }
+
+  #planovalor {
+    transform: translate(400px, 15px);
+  }
+
+  #onservicevalue {
+    transform: translate(415px, 0px);
+  }
+
+  #profilevalue {
+    transform: translate(372px, 0px);
+  }
+
+  #storagevalue {
+    transform: translate(412px, 0px);
+  }
+
+  #totalvalue {
+    transform: translate(375px, 0px);
+  }
+
+  #onservicem {
+    transform: translate(550px, -45px);
+  }
+
+  #storagem {
+    transform: translate(550px, -45px);
+  }
+
+  #profilem {
+    transform: translate(550px, -45px);
+  }
 }
 
 @media only screen and (min-width: 992px) {
-
 }
 
-
 @media only screen and (min-width: 1200px) {
-
 }
 
 @media only screen and (min-width: 1440px) {
-
 }
