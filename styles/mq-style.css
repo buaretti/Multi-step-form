@@ -458,71 +458,52 @@
   }
 
   .custom-checkbox1 .checkmark {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    border: 1px solid hsl(229, 24%, 87%);
-    border-radius: 3px;
-    margin-right: 10px;
-    cursor: pointer;
-    text-align: center;
     transform: translate(22px, 25px);
   }
-  .custom-checkbox2 input[type="checkbox"] {
-    display: none;
-  }
-  
+
   .custom-checkbox2 .checkmark {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    border: 1px solid hsl(229, 24%, 87%);
-    border-radius: 3px;
-    margin-right: 10px;
-    cursor: pointer;
-    text-align: center;
     transform: translate(22px, 25px);
   }
 
   .custom-checkbox3 .checkmark {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    border: 1px solid hsl(229, 24%, 87%);
-    border-radius: 3px;
-    margin-right: 10px;
-    cursor: pointer;
-    text-align: center;
     transform: translate(22px, 25px);
   }
-  
-  .custom-checkbox1 input[type="checkbox"]:checked + .checkmark::before {
-    content: "✔";
-    display: block;
-    text-align: center;
-    line-height: 20px;
-    color: white;
+
+  #ppage4{
+    transform: translate(280px);
   }
-  
-  .custom-checkbox2 input[type="checkbox"]:checked + .checkmark::before {
-    content: "✔";
-    display: block;
-    text-align: center;
-    line-height: 20px;
-    color: white;
+
+  #fundo{
+    width: 405px;
+    transform: translate(330px, 30px);
   }
-  
-  
-  .custom-checkbox3 input[type="checkbox"]:checked + .checkmark::before {
-    content: "✔";
-    display: block;
-    text-align: center;
-    line-height: 20px;
-    color: white;
+
+  #porperiodo{
+    transform: translate(320px);
+    display: inline-block;
   }
+    
+  #planovalor{
+    transform: translate(224px);
+  }
+
+  #onservicevalue{
+    transform: translate(240px);
+  }
+
+  #storagevalue{
+    transform: translate(237px);
+  }
+
+  #profilevalue{
+    transform: translate(197px);
+  }
+
+  #totalvalue{
+    transform: translate(532px);
+    margin-top: 20px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
