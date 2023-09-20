@@ -184,16 +184,16 @@
     position: absolute;
     z-index: 2;
     width: 100px;
-    height: 330px;
+    height: 405px;
     border-radius: 10px;
-    transform: translate(55px, 135px);
+    transform: translate(55px, 60px);
   }
 
   main {
     width: 850px;
+    height: 550px;
     padding: 30px;
     position: absolute;
-    z-index: 1;
     flex-grow: 1;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -341,6 +341,34 @@
   #profilem {
     transform: translate(550px, -45px);
   }
+
+  #arcade{
+    width: 120px;
+    height: 170px;
+    transform: translate(330px);
+  }
+  
+  #advanced{
+    width: 120px;
+    height: 170px;
+    transform: translate(490px, -188px);
+  }
+  
+  #pro{
+    width: 120px;
+    height: 170px;
+    transform: translate(650px, -375px);
+  }
+
+  #container1{
+    transform: translate(330px, -380px);
+    width: 445px;
+  }
+
+  span#yearly{
+    transform: translate(320px, -25px);
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {

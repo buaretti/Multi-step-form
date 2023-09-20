@@ -226,7 +226,7 @@ span#m {
   transform: translate(70px, 25px);
 }
 
-span#y {
+span#yearly {
   color: hsl(213, 96%, 18%);
   display: inline-block;
   transform: translate(240px, -25px);

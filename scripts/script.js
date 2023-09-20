@@ -40,7 +40,7 @@ function proClick() {
 document.addEventListener("DOMContentLoaded", function () {
   var range = document.getElementById("range");
   var m = document.getElementById("m");
-  var y = document.getElementById("y");
+  var y = document.getElementById("yearly");
   var arcadeMonth = document.getElementById("arcademonth");
   var advancedMonth = document.getElementById("advancedmonth");
   var proMonth = document.getElementById("promonth");
