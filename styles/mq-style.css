@@ -504,6 +504,21 @@
     margin-top: 20px;
   }
 
+  #thanksimg{
+    transform: translate(145px);
+    margin-top: 150px;
+  }
+
+  #thanks{
+    transform: translate(470px);
+    width: 200px;
+  }
+
+  #pthanks{
+    transform: translate(345px);
+    width: 450px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
