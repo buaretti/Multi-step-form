@@ -80,6 +80,14 @@ header {
   transform: translate(45px, -50px);
 }
 
+.brpodre{
+  display: none;
+}
+
+#step1, #step2, #step3, #step4, #yourinfo, #selectplan, #add-ons, #summary{
+  display: none;
+}
+
 .circle.active {
   background-color: hsl(206, 94%, 87%);
   color: black;
