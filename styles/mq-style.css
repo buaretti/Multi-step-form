@@ -223,6 +223,14 @@
     transform: translate(-2px);
   }
 
+  #h1page2{
+    transform: translate(20px);
+  }
+
+  #ppage2{
+    transform: translate(254px);
+  }
+
   .geralp {
     transform: translate(300px);
     width:500px;
@@ -345,24 +353,52 @@
   #arcade{
     width: 120px;
     height: 170px;
-    transform: translate(330px);
+    transform: translate(330px, 30px);
   }
   
   #advanced{
     width: 120px;
     height: 170px;
-    transform: translate(490px, -188px);
+    transform: translate(490px, -158px);
   }
   
   #pro{
     width: 120px;
     height: 170px;
-    transform: translate(650px, -375px);
+    transform: translate(650px, -345px);
   }
 
   #container1{
-    transform: translate(330px, -380px);
+    transform: translate(330px, -350px);
     width: 445px;
+  }
+
+  #arcade > h2 {
+    transform: translate(-40px, 60px);
+  }
+  
+  #arcade > p {
+    transform: translate(-50px, 40px);
+  }
+
+  #advanced > h2 {
+    transform: translate(20px, 25px);
+  }
+  
+  #advanced > p {
+    transform: translate(-48px, 6px);
+  }
+
+  #pro > h2 {
+    transform: translate(-40px, 55px);
+  }
+  
+  #pro > p {
+    transform: translate(-50px, 39px);
+  }
+
+  .monthsfree{
+    width: 90px;
   }
 
   span#yearly{
