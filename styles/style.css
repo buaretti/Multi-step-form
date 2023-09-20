@@ -34,7 +34,6 @@ header {
   text-align: center;
   display: inline-block;
   margin-right: 10px;
-  margin-left: 5px;
 
   transform: translate(45px, -50px);
 }
@@ -502,6 +501,9 @@ main {
   padding: 30px;
   transform: translateY(-100px);
   flex: 1;
+
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
 }
 
 main > h1,

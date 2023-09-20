@@ -405,6 +405,124 @@
     transform: translate(320px, -25px);
   }
 
+  #h1page3{
+    transform: translate(-5px);
+  }
+
+  #ppage3{
+    transform: translate(250px);
+    margin-bottom: 40px;
+  }
+
+  #onservice{
+    height: 80px;
+    width: 445px;
+    transform: translate(325px);
+  }
+
+  #storage{
+    height: 80px;
+    width: 445px;
+    transform: translate(325px);
+  }
+  
+  #profile{
+    height: 80px;
+    width: 445px;
+    transform: translate(325px);
+  }
+
+  #onservice > h2 {
+    margin-top: -15px;
+  }
+  
+  #onservicem {
+    transform: translate(352px, -45px);
+  }
+  
+  #storage > h2 {
+    margin-top: -15px;
+  }
+  
+  #storagem {
+    transform: translate(352px, -45px);
+  }
+  
+  #profile > h2 {
+    transform: translate(70px);
+    margin-top: -15px;
+  }
+  
+  #profilem {
+    transform: translate(352px, -45px);
+  }
+
+  .custom-checkbox1 .checkmark {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    transform: translate(22px, 25px);
+  }
+  .custom-checkbox2 input[type="checkbox"] {
+    display: none;
+  }
+  
+  .custom-checkbox2 .checkmark {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    transform: translate(22px, 25px);
+  }
+
+  .custom-checkbox3 .checkmark {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+    transform: translate(22px, 25px);
+  }
+  
+  .custom-checkbox1 input[type="checkbox"]:checked + .checkmark::before {
+    content: "✔";
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  
+  .custom-checkbox2 input[type="checkbox"]:checked + .checkmark::before {
+    content: "✔";
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  
+  
+  .custom-checkbox3 input[type="checkbox"]:checked + .checkmark::before {
+    content: "✔";
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
