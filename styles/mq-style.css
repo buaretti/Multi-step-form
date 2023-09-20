@@ -522,6 +522,353 @@
 }
 
 @media only screen and (min-width: 1200px) {
+
+  header {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 405px;
+    border-radius: 10px;
+    transform: translate(85px, 60px);
+  }
+
+  main {
+    width: 1000px;
+    height: 550px;
+    padding: 30px;
+    position: absolute;
+    flex-grow: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  footer {
+    width: 790px;
+    position: relative;
+    top: 555px;
+    z-index: 0;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  main > p > input {
+    width: 510px;
+    transform: translate(365px);
+  }
+
+  main > p > label {
+    transform: translate(365px);
+    display: inline-block;
+  }
+
+  h1 {
+    transform: translate(-2px);
+  }
+
+  #h1page1{
+    transform: translate(-38px);
+  }
+
+  #ppage1{
+    transform: translate(336px);
+  }
+
+  #h1page2{
+    transform: translate(20px);
+  }
+
+  #ppage2{
+    transform: translate(254px);
+  }
+
+  .geralp {
+    transform: translate(300px);
+    width:500px;
+  }
+
+  #goback {
+    transform: translate(360px, 40px);
+  }
+
+  #nextback {
+    transform: translate(333.5px, -10px);
+  }
+
+  #confirmback {
+    transform: translate(333.5px, -10px);
+  }
+
+  .circle-1 {
+    margin-left: 0px;
+    transform: translate(-60px, -50px);
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+  .circle-2 {
+    transform: translate(-60px, -70px);
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+  .circle-3 {
+    transform: translate(-60px, -90px);
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+  .circle-4 {
+    transform: translate(-60px, -110px);
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+  }
+
+  #step1, #step2, #step3, #step4, #yourinfo, #selectplan, #add-ons, #summary{
+    display: block;
+    transform: translate(0px, -150px);
+  }
+
+  #step1, #step2, #step3, #step4{
+    color: hsl(243, 100%, 74%);
+    transform: translate(0px, -150px);
+  }
+
+  #step1{
+    transform: translate(0px, -120px);
+  }
+  
+  #yourinfo{
+    transform: translate(0px, -120px);
+    
+  }
+  #step2{
+    transform: translate(0px, -140px);
+  }
+  
+  #selectplan{
+    transform: translate(0px, -140px);
+    
+  }
+  #step3{
+    transform: translate(0px, -160px);
+  }
+  
+  #add-ons{
+    transform: translate(0px, -160px);
+    
+  }
+
+  #yourinfo, #selectplan, #add-ons, #summary{
+    color: white;
+  }
+
+
+  #container1 {
+    transform: translate(140px);
+  }
+
+  #planovalor {
+    transform: translate(400px, 15px);
+  }
+
+  #onservicevalue {
+    transform: translate(415px, 0px);
+  }
+
+  #profilevalue {
+    transform: translate(372px, 0px);
+  }
+
+  #storagevalue {
+    transform: translate(412px, 0px);
+  }
+
+  #totalvalue {
+    transform: translate(375px, 0px);
+  }
+
+  #onservicem {
+    transform: translate(550px, -45px);
+  }
+
+  #storagem {
+    transform: translate(550px, -45px);
+  }
+
+  #profilem {
+    transform: translate(550px, -45px);
+  }
+
+  #arcade{
+    width: 120px;
+    height: 170px;
+    transform: translate(330px, 30px);
+  }
+  
+  #advanced{
+    width: 120px;
+    height: 170px;
+    transform: translate(490px, -158px);
+  }
+  
+  #pro{
+    width: 120px;
+    height: 170px;
+    transform: translate(650px, -345px);
+  }
+
+  #container1{
+    transform: translate(330px, -350px);
+    width: 445px;
+  }
+
+  #arcade > h2 {
+    transform: translate(-40px, 60px);
+  }
+  
+  #arcade > p {
+    transform: translate(-50px, 40px);
+  }
+
+  #advanced > h2 {
+    transform: translate(20px, 25px);
+  }
+  
+  #advanced > p {
+    transform: translate(-48px, 6px);
+  }
+
+  #pro > h2 {
+    transform: translate(-40px, 55px);
+  }
+  
+  #pro > p {
+    transform: translate(-50px, 39px);
+  }
+
+  .monthsfree{
+    width: 90px;
+  }
+
+  span#yearly{
+    transform: translate(320px, -25px);
+  }
+
+  #h1page3{
+    transform: translate(-5px);
+  }
+
+  #ppage3{
+    transform: translate(250px);
+    margin-bottom: 40px;
+  }
+
+  #onservice{
+    height: 80px;
+    width: 445px;
+    transform: translate(325px);
+  }
+
+  #storage{
+    height: 80px;
+    width: 445px;
+    transform: translate(325px);
+  }
+  
+  #profile{
+    height: 80px;
+    width: 445px;
+    transform: translate(325px);
+  }
+
+  #onservice > h2 {
+    margin-top: -15px;
+  }
+  
+  #onservicem {
+    transform: translate(352px, -45px);
+  }
+  
+  #storage > h2 {
+    margin-top: -15px;
+  }
+  
+  #storagem {
+    transform: translate(352px, -45px);
+  }
+  
+  #profile > h2 {
+    transform: translate(70px);
+    margin-top: -15px;
+  }
+  
+  #profilem {
+    transform: translate(352px, -45px);
+  }
+
+  .custom-checkbox1 .checkmark {
+    transform: translate(22px, 25px);
+  }
+
+  .custom-checkbox2 .checkmark {
+    transform: translate(22px, 25px);
+  }
+
+  .custom-checkbox3 .checkmark {
+    transform: translate(22px, 25px);
+  }
+
+  #ppage4{
+    transform: translate(280px);
+  }
+
+  #fundo{
+    width: 405px;
+    transform: translate(330px, 30px);
+  }
+
+  #porperiodo{
+    transform: translate(320px);
+    display: inline-block;
+  }
+    
+  #planovalor{
+    transform: translate(224px);
+  }
+
+  #onservicevalue{
+    transform: translate(240px);
+  }
+
+  #storagevalue{
+    transform: translate(237px);
+  }
+
+  #profilevalue{
+    transform: translate(197px);
+  }
+
+  #totalvalue{
+    transform: translate(532px);
+    margin-top: 20px;
+  }
+
+  #thanksimg{
+    transform: translate(145px);
+    margin-top: 150px;
+  }
+
+  #thanks{
+    transform: translate(470px);
+    width: 200px;
+  }
+
+  #pthanks{
+    transform: translate(345px);
+    width: 450px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
