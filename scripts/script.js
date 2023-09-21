@@ -107,12 +107,14 @@ document.addEventListener("DOMContentLoaded", function () {
       arcadeMonth.textContent = "$9/mo";
       advancedMonth.textContent = "$12/mo";
       proMonth.textContent = "$15/mo";
+      localStorage.setItem("selectedRange", range.value);
     } else if (range.value == 1) {
       m.style.color = "hsl(231, 11%, 63%)";
       y.style.color = "hsl(213, 96%, 18%)";
       arcadeMonth.textContent = "$90/yr";
       advancedMonth.textContent = "$120/yr";
       proMonth.textContent = "$150/yr";
+      localStorage.setItem("selectedRange", range.value);
     }
   }
 
@@ -122,6 +124,28 @@ document.addEventListener("DOMContentLoaded", function () {
     setColors();
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Recupere o valor do range do Local Storage
+  var selectedRange = localStorage.getItem("selectedRange");
+
+  // Verifique se o valor é válido (0 ou 1)
+  if (selectedRange === "0" || selectedRange === "1") {
+    // Se o valor for 0, atualize os elementos com os valores desejados
+    if (selectedRange === "0") {
+      document.getElementById("onservicem").textContent = "$1/mo";
+      document.getElementById("storagem").textContent = "$2/mo";
+      document.getElementById("profilem").textContent = "$2/mo";
+    }
+    // Se o valor for 1, atualize os elementos com os valores desejados
+    else if (selectedRange === "1") {
+      document.getElementById("onservicem").textContent = "+$10/yr";
+      document.getElementById("storagem").textContent = "+$20/yr";
+      document.getElementById("profilem").textContent = "+$20/yr";
+    }
+  }
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var range = document.getElementById("range");
