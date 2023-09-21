@@ -572,6 +572,7 @@
 
   #ppage1{
     transform: translate(336px);
+    margin-bottom: 22px;
   }
 
   #h1page2{
@@ -757,18 +758,18 @@
   }
 
   #h1page3{
-    transform: translate(-5px);
+    transform: translate(-25px);
   }
 
   #ppage3{
-    transform: translate(250px);
+    transform: translate(305px);
     margin-bottom: 40px;
   }
 
   #onservice{
     height: 80px;
-    width: 445px;
-    transform: translate(325px);
+    width: 535px;
+    transform: translate(375px);
   }
 
   #storage{
@@ -779,8 +780,8 @@
   
   #profile{
     height: 80px;
-    width: 445px;
-    transform: translate(325px);
+    width: 535px;
+    transform: translate(375px);
   }
 
   #onservice > h2 {
@@ -788,7 +789,7 @@
   }
   
   #onservicem {
-    transform: translate(352px, -45px);
+    transform: translate(430px, -45px);
   }
   
   #storage > h2 {
@@ -796,7 +797,7 @@
   }
   
   #storagem {
-    transform: translate(352px, -45px);
+    transform: translate(430px, -45px);
   }
   
   #profile > h2 {
@@ -805,7 +806,7 @@
   }
   
   #profilem {
-    transform: translate(352px, -45px);
+    transform: translate(430px, -45px);
   }
 
   .custom-checkbox1 .checkmark {
