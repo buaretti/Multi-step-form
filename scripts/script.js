@@ -73,6 +73,8 @@ function arcadeClick() {
   const arcade = document.getElementById("arcade");
   arcade.style.borderColor = "hsl(243, 100%, 62%)";
   arcade.style.backgroundColor = "hsl(231, 100%, 99%)";
+
+  localStorage.setItem("selectedPlan", "Arcade");
 }
 
 function advancedClick() {
@@ -81,6 +83,9 @@ function advancedClick() {
   const advanced = document.getElementById("advanced");
   advanced.style.borderColor = "hsl(243, 100%, 62%)";
   advanced.style.backgroundColor = "hsl(231, 100%, 99%)";
+
+  localStorage.setItem("selectedPlan", "Advanced");
+
 }
 
 function proClick() {
@@ -89,7 +94,20 @@ function proClick() {
   const pro = document.getElementById("pro");
   pro.style.borderColor = "hsl(243, 100%, 62%)";
   pro.style.backgroundColor = "hsl(231, 100%, 99%)";
+
+  localStorage.setItem("selectedPlan", "Pro");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Recupere a escolha do plano do Local Storage
+  var selectedPlan = localStorage.getItem("selectedPlan");
+
+  // Verifique se há uma escolha de plano válida
+  if (selectedPlan) {
+    // Atualize o elemento #plano com a escolha do plano
+    document.getElementById("plano").textContent = selectedPlan;
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   var range = document.getElementById("range");
@@ -162,7 +180,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("porperiodo").textContent = "Total (per year)";
     }
 
-    // Atualize o elemento #periodo com base no valor de range
+    let selectedPlan = localStorage.getItem("selectedPlan");
+
     if (selectedRange === "0") {
       document.getElementById("periodo").textContent = "(Monthly)";
     } else if (selectedRange === "1") {
@@ -170,8 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   var range = document.getElementById("range");
