@@ -865,17 +865,17 @@
   }
 
   #thanksimg{
-    transform: translate(145px);
+    transform: translate(150px);
     margin-top: 150px;
   }
 
   #thanks{
-    transform: translate(470px);
+    transform: translate(550px);
     width: 200px;
   }
 
   #pthanks{
-    transform: translate(345px);
+    transform: translate(420px);
     width: 450px;
   }
 }
