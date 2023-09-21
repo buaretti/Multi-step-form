@@ -111,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (range.value == 1) {
       m.style.color = "hsl(231, 11%, 63%)";
       y.style.color = "hsl(213, 96%, 18%)";
+
       arcadeMonth.textContent = "$90/yr";
       advancedMonth.textContent = "$120/yr";
       proMonth.textContent = "$150/yr";
@@ -136,15 +137,40 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("onservicem").textContent = "$1/mo";
       document.getElementById("storagem").textContent = "$2/mo";
       document.getElementById("profilem").textContent = "$2/mo";
+      document.getElementById("porperiodo").textContent = "Total (per month)";
     }
     // Se o valor for 1, atualize os elementos com os valores desejados
     else if (selectedRange === "1") {
       document.getElementById("onservicem").textContent = "+$10/yr";
       document.getElementById("storagem").textContent = "+$20/yr";
       document.getElementById("profilem").textContent = "+$20/yr";
+      document.getElementById("porperiodo").textContent = "Total (per year)";
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Recupere o valor do range da página 2 do Local Storage
+  var selectedRange = localStorage.getItem("selectedRange");
+
+  // Verifique se o valor é válido (0 ou 1)
+  if (selectedRange === "0" || selectedRange === "1") {
+    // Atualize o elemento #porperiodo com base no valor de range
+    if (selectedRange === "0") {
+      document.getElementById("porperiodo").textContent = "Total (per month)";
+    } else if (selectedRange === "1") {
+      document.getElementById("porperiodo").textContent = "Total (per year)";
+    }
+
+    // Atualize o elemento #periodo com base no valor de range
+    if (selectedRange === "0") {
+      document.getElementById("periodo").textContent = "(Monthly)";
+    } else if (selectedRange === "1") {
+      document.getElementById("periodo").textContent = "(Yearly)";
+    }
+  }
+});
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
