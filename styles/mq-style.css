@@ -575,11 +575,11 @@
   }
 
   #h1page2{
-    transform: translate(20px);
+    transform: translate(0px);
   }
 
   #ppage2{
-    transform: translate(254px);
+    transform: translate(310px);
   }
 
   .geralp {
@@ -588,7 +588,7 @@
   }
 
   #goback {
-    transform: translate(360px, 40px);
+    transform: translate(280px, 40px);
   }
 
   #nextback {
@@ -702,50 +702,50 @@
   }
 
   #arcade{
-    width: 120px;
-    height: 170px;
-    transform: translate(330px, 30px);
+    width: 150px;
+    height: 200px;
+    transform: translate(380px, 30px);
   }
   
   #advanced{
-    width: 120px;
-    height: 170px;
-    transform: translate(490px, -158px);
+    width: 150px;
+    height: 200px;
+    transform: translate(567.5px, -188px);
   }
   
   #pro{
-    width: 120px;
-    height: 170px;
-    transform: translate(650px, -345px);
+    width: 150px;
+    height: 200px;
+    transform: translate(755px, -406px);
   }
 
   #container1{
-    transform: translate(330px, -350px);
-    width: 445px;
+    transform: translate(380px, -410px);
+    width: 530px;
   }
 
   #arcade > h2 {
-    transform: translate(-40px, 60px);
+    transform: translate(-40px, 90px);
   }
   
   #arcade > p {
-    transform: translate(-50px, 40px);
+    transform: translate(-50px, 75px);
   }
 
   #advanced > h2 {
-    transform: translate(20px, 25px);
+    transform: translate(-38px, 90px);
   }
   
   #advanced > p {
-    transform: translate(-48px, 6px);
+    transform: translate(-48px, 75px);
   }
 
   #pro > h2 {
-    transform: translate(-40px, 55px);
+    transform: translate(-40px, 90px);
   }
   
   #pro > p {
-    transform: translate(-50px, 39px);
+    transform: translate(-50px, 75px);
   }
 
   .monthsfree{
@@ -753,7 +753,7 @@
   }
 
   span#yearly{
-    transform: translate(320px, -25px);
+    transform: translate(400px, -25px);
   }
 
   #h1page3{
@@ -773,8 +773,8 @@
 
   #storage{
     height: 80px;
-    width: 445px;
-    transform: translate(325px);
+    width: 535px;
+    transform: translate(375px);
   }
   
   #profile{
