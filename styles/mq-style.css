@@ -469,8 +469,12 @@
     transform: translate(22px, 25px);
   }
 
+  #h1page4{
+    transform: translate(-8px);
+  }
+
   #ppage4{
-    transform: translate(280px);
+    transform: translate(274px);
   }
 
   #fundo{
@@ -567,11 +571,11 @@
   }
 
   #h1page1{
-    transform: translate(-38px);
+    transform: translate(-40px);
   }
 
   #ppage1{
-    transform: translate(336px);
+    transform: translate(338px);
     margin-bottom: 22px;
   }
 
@@ -667,7 +671,7 @@
 
 
   #container1 {
-    transform: translate(140px);
+    transform: translate(136px);
   }
 
   #planovalor {
@@ -821,38 +825,42 @@
     transform: translate(22px, 25px);
   }
 
+  #h1page4{
+    transform: translate(-30px);
+  }
+
   #ppage4{
-    transform: translate(280px);
+    transform: translate(328px);
   }
 
   #fundo{
-    width: 405px;
-    transform: translate(330px, 30px);
+    width: 490px;
+    transform: translate(380px, 30px);
   }
 
   #porperiodo{
-    transform: translate(320px);
+    transform: translate(365px);
     display: inline-block;
   }
     
   #planovalor{
-    transform: translate(224px);
+    transform: translate(298px);
   }
 
   #onservicevalue{
-    transform: translate(240px);
+    transform: translate(315px);
   }
 
   #storagevalue{
-    transform: translate(237px);
+    transform: translate(312px);
   }
 
   #profilevalue{
-    transform: translate(197px);
+    transform: translate(272.5px);
   }
 
   #totalvalue{
-    transform: translate(532px);
+    transform: translate(658px);
     margin-top: 20px;
   }
 
