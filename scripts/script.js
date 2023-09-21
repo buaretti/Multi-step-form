@@ -1,3 +1,57 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const nextButton = document.getElementById("next");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const phoneInput = document.getElementById("phone");
+  const nameError = document.getElementById("nameError");
+  const emailError = document.getElementById("emailError");
+  const phoneError = document.getElementById("phoneError");
+
+  function showErrorMessage(element, message) {
+      element.textContent = message;
+      element.style.color = "hsl(354, 84%, 57%)";
+      element.style.display = "inline-block"; // Exibe em linha para ocupar o espaço mínimo
+  }
+
+  function hideErrorMessage(element) {
+      element.textContent = "";
+      element.style.display = "none"; // Oculta a mensagem de erro
+  }
+
+  nextButton.addEventListener("click", function (event) {
+      // Verifique se algum dos campos de entrada está vazio
+      if (!nameInput.value || !emailInput.value || !phoneInput.value) {
+          event.preventDefault(); // Impede a ação padrão de seguir o link
+
+          // Exibe mensagens de erro
+          if (!nameInput.value) {
+              showErrorMessage(nameError, "This field is required.");
+          } else {
+              hideErrorMessage(nameError); // Esconde a mensagem de erro se o campo estiver preenchido
+          }
+
+          if (!emailInput.value) {
+              showErrorMessage(emailError, "This field is required.");
+          } else {
+              hideErrorMessage(emailError);
+          }
+
+          if (!phoneInput.value) {
+              showErrorMessage(phoneError, "This field is required.");
+          } else {
+              hideErrorMessage(phoneError);
+          }
+
+          // Oculta as mensagens de erro após 3 segundos
+          setTimeout(function () {
+              hideErrorMessage(nameError);
+              hideErrorMessage(emailError);
+              hideErrorMessage(phoneError);
+          }, 2000);
+      }
+  });
+});
+
 function resetStyles() {
   const arcade = document.getElementById("arcade");
   const advanced = document.getElementById("advanced");

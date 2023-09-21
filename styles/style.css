@@ -626,3 +626,21 @@ a {
   text-align: center;
   display: inline-block;
 }
+
+#nameError{
+font-size: 12px;
+transform: translate(230px, -35px);
+margin: 0px;
+}
+
+#emailError{
+  font-size: 12px;
+  transform: translate(230px, -35px);
+  margin: 0px;
+}
+
+#phoneError{
+  font-size: 12px;
+  transform: translate(230px, -15px);
+  margin: 0px;
+}

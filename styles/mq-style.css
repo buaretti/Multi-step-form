@@ -14,6 +14,18 @@
     width: 450px;
   }
 
+  #nameError{
+    transform: translate(330px, -35px);
+    }
+    
+    #emailError{
+      transform: translate(330px, -35px);
+    }
+    
+    #phoneError{
+      transform: translate(330px, -15px);
+    }
+
   .geralp {
     text-align: center;
   }
@@ -100,6 +112,18 @@
   main > p > input {
     width: 600px;
   }
+
+  #nameError{
+    transform: translate(480px, -35px);
+    }
+    
+    #emailError{
+      transform: translate(480px, -35px);
+    }
+    
+    #phoneError{
+      transform: translate(480px, -15px);
+    }
 
   .geralp {
     text-align: center;
@@ -222,6 +246,18 @@
   h1 {
     transform: translate(-2px);
   }
+
+    #nameError{
+    transform: translate(630px, -35px);
+    }
+    
+    #emailError{
+      transform: translate(630px, -35px);
+    }
+    
+    #phoneError{
+      transform: translate(630px, -15px);
+    }
 
   #h1page2{
     transform: translate(20px);
@@ -569,6 +605,18 @@
   h1 {
     transform: translate(-2px);
   }
+
+  #nameError{
+    transform: translate(730px, -35px);
+    }
+    
+    #emailError{
+      transform: translate(730px, -35px);
+    }
+    
+    #phoneError{
+      transform: translate(730px, -15px);
+    }
 
   #h1page1{
     transform: translate(-40px);
@@ -1232,6 +1280,18 @@
     transform: translate(420px);
     width: 450px;
   }
+
+  #nameError{
+    transform: translate(730px, -35px);
+    }
+    
+    #emailError{
+      transform: translate(730px, -35px);
+    }
+    
+    #phoneError{
+      transform: translate(730px, -15px);
+    }
 }
 
 @media only screen and (min-width: 1528px){
@@ -1277,6 +1337,18 @@
   h1 {
     transform: translate(-2px);
   }
+
+  #nameError{
+    transform: translate(790px, -35px);
+    }
+    
+    #emailError{
+      transform: translate(790px, -35px);
+    }
+    
+    #phoneError{
+      transform: translate(790px, -15px);
+    }
 
   #h1page1{
     transform: translate(-40px);
@@ -1586,4 +1658,5 @@
     transform: translate(420px);
     width: 450px;
   }
+  
 }
