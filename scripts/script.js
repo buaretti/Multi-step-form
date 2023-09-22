@@ -1,3 +1,28 @@
+const path = window.location.pathname;
+
+// Mapeie "index.html" para "page1.html"
+const match = path.match(/(page(\d+)\.html|index\.html)/);
+
+if (match) {
+  const currentPage = parseInt(match[2] || 1, 10); // Use 1 se não houver correspondência
+
+  if (currentPage === 5 || path.endsWith("page5.html")) {
+    currentPage = 4;
+  }
+
+  const circles = document.querySelectorAll(".circle");
+  circles.forEach((circle, index) => {
+    if (index + 1 === currentPage) {
+      circle.classList.add("active");
+    } else {
+      circle.classList.remove("active");
+    }
+  });
+
+  console.log("Página atual: " + currentPage);
+} else {
+  console.log("Página não encontrada ou não possui um número.");
+}
 document.addEventListener("DOMContentLoaded", function () {
   const nextButton = document.getElementById("next");
   const nameInput = document.getElementById("name");
@@ -246,31 +271,6 @@ function updatePlanValue() {
 updatePlanValue();
 
 
-const path = window.location.pathname;
-
-// Mapeie "index.html" para "page1.html"
-const match = path.match(/(page(\d+)\.html|index\.html)/);
-
-if (match) {
-  const currentPage = parseInt(match[2] || 1, 10); // Use 1 se não houver correspondência
-
-  if (currentPage === 5 || path.endsWith("page5.html")) {
-    currentPage = 4;
-  }
-
-  const circles = document.querySelectorAll(".circle");
-  circles.forEach((circle, index) => {
-    if (index + 1 === currentPage) {
-      circle.classList.add("active");
-    } else {
-      circle.classList.remove("active");
-    }
-  });
-
-  console.log("Página atual: " + currentPage);
-} else {
-  console.log("Página não encontrada ou não possui um número.");
-}
 
 // Função para marcar/desmarcar o checkbox e aplicar os estilos correspondentes
 function toggleCheckboxStyles(checkbox, div, borderColor, backgroundColor) {
