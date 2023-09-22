@@ -213,6 +213,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function updatePlanValue() {
+  const selectedRange = localStorage.getItem("selectedRange");
+  let planValue = 0;
+
+  if (selectedRange === "0") {
+    // Mensal
+    if (localStorage.getItem("selectedPlan") === "Arcade") {
+      planValue = 9;
+    } else if (localStorage.getItem("selectedPlan") === "Advanced") {
+      planValue = 12;
+    } else if (localStorage.getItem("selectedPlan") === "Pro") {
+      planValue = 15;
+    }
+    document.getElementById("planovalor").textContent = "$" + planValue + "/mo";
+  } else if (selectedRange === "1") {
+    // Anual (multiplica por 10)
+    if (localStorage.getItem("selectedPlan") === "Arcade") {
+      planValue = 90;
+    } else if (localStorage.getItem("selectedPlan") === "Advanced") {
+      planValue = 120;
+    } else if (localStorage.getItem("selectedPlan") === "Pro") {
+      planValue = 150;
+    }
+    document.getElementById("planovalor").textContent = "$" + planValue + "/yr";
+  }
+
+  // Atualize o elemento #planovalor
+}
+
+// Chame a função para atualizar o valor do plano quando necessário
+updatePlanValue();
+
+
 const path = window.location.pathname;
 
 // Mapeie "index.html" para "page1.html"
